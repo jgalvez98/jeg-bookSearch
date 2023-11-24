@@ -8,11 +8,11 @@ import {
   Row
 } from 'react-bootstrap';
 
-import {SAVE_BOOK} from '../utils/mutations';
+import {SAVE_BOOK} from '../assets/utils/mutations';
 import { useMutation } from '@apollo/client';
-import Auth from '../utils/auth';
-import { searchGoogleBooks } from '../utils/API';
-import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
+import Auth from '../assets/utils/auth';
+import { searchGoogleBooks } from '../assets/utils/API';
+import { saveBookIds, getSavedBookIds } from '../assets/utils/localStorage';
 
 const SearchBooks = () => {
 
