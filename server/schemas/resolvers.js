@@ -36,11 +36,11 @@ const resolvers = {
     },
     saveBook: async (parent, { book }, context) => {
       if (context.user) {
-
-        const user=await User.findOneAndUpdate(
+        
+//use ...book for short wait 
+        const user= await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $addToSet: { savedBooks: {...book} } },
-          {new:true}
+          { $addToSet: { savedBooks: {...book} } }
         );
 
         return user;
@@ -48,20 +48,22 @@ const resolvers = {
       throw AuthenticationError;
       ('You need to be logged in!');
     },
+
     removeBook: async (parent, { bookId }, context) => {
       if (context.user) {
+        
 
-        const user = await User.findOneAndUpdate(
+        await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $pull: { savedBooks: {bookId} } },
-          {new:true}
+          { $pull: { savedBooks: {bookId} } }
         );
 
-        return user;
+        return bookId;
       }
       throw AuthenticationError;
-    }
-  }
+    },
+
+  },
 };
 
 module.exports = resolvers;
