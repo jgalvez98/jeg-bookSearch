@@ -28,7 +28,10 @@ The Book Search Engine is a full-stack application that allows users to search f
   
   ## Sample
 
- url of deployed site : 
+ url of deployed site : https://jeg-booksearch-47ec5e031935.herokuapp.com/
+
+ <img width="960" alt="challenge-21" src="https://github.com/jgalvez98/jeg-bookSearch/assets/71774194/64b398a3-e25b-4bd1-8cd7-b10169fafde9">
+
 
 
   ## License
