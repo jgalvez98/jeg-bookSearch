@@ -21,7 +21,7 @@ The Book Search Engine is a full-stack application that allows users to search f
 
   ## Usage
   
- Simply run the aplication which is deployed on Netlify and you will be able to see my portfolio.
+ simply run the app and start searching your favorite books
 
   ## Contribution
   for this project N/A
